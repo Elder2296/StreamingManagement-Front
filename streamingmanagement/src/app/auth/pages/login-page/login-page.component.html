@@ -1,0 +1,35 @@
+<div class="login-container" fxLayout="column">
+
+  <div fxLyout="column" fxLayoutAlign="center center">
+
+
+    <h2>INGRESE CON SU CUENTA</h2>
+
+    <form name="loginForm" [formGroup]="loginForm" (ngSubmit)="iniciarSesion()">
+      <mat-form-field appearance="outline">
+        <mat-label>Usuario</mat-label>
+        <input matInput formControlName="usuario" maxlength="100" required>
+        <mat-icon matSuffix class="secondary-text">account_circle</mat-icon>
+        <mat-error>
+          Usuario es requerido
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" formControlName="clave" required>
+        <mat-icon matSuffix class="secondary-text">vpn_key</mat-icon>
+        <mat-error>
+          Contraseña es requerida
+        </mat-error>
+      </mat-form-field>
+      
+      
+        <button mat-raised-button type="submit" color="accent" class="submit-button" aria-label="LOG IN"
+          [disabled]="loginForm.invalid">
+          Iniciar Sesión
+        </button>
+      
+    </form>
+  </div>
+</div>

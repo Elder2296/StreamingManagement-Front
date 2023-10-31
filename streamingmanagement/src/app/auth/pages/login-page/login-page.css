@@ -1,0 +1,46 @@
+.login-container {
+                    background-color: rgba(255, 255, 255, 0.8);
+                    border-radius: 10px;
+                    padding: 20px;
+                    max-width: 400px;
+                    width: 100%;
+                    text-align: center;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                    margin: 0 auto;
+                    margin-top: 100px; /* Ajusta según sea necesario para centrar verticalmente */
+                  }
+                  
+                  .login-container h2 {
+                    color: #333;
+                  }
+                  
+                  .login-form {
+                    display: flex;
+                    flex-direction: column;
+                  }
+                  
+                  .login-form input {
+                    margin: 10px 0;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                  }
+                  
+                  .login-form button {
+                    padding: 10px 20px;
+                    background-color: #007BFF;
+                    color: #fff;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                  }
+                  .submit-button {
+                    width: 220px;
+                    margin: 16px auto;
+                    display: block;
+
+                    @include media-breakpoint('xs') {
+                        width: 90%;
+                    }
+                }
+                  
